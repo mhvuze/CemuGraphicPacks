@@ -1,0 +1,10 @@
+[Definition]
+titleIds = 0005000010180500,0005000010180600,0005000010180700
+name = "Captain Toad: Treasure Tracker - 2160p (4K)"
+
+[TextureRedefine]
+formatsExcluded = 0x41A # exclude title screen
+width = 1280
+height = 720
+overwriteWidth = 3840
+overwriteHeight = 2160
