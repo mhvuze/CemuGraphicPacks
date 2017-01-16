@@ -1,2 +1,2 @@
 # CemuGraphicPacks
-Personal repo for Cemu graphic packs.
+My personal repo for Cemu graphic packs.
