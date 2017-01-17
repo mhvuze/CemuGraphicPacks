@@ -1,5 +1,3 @@
-# Bugs: Zoom level transition effect is low resolution, need to find viewport
-
 [Definition]
 titleIds = 0005000010180500,0005000010180600,0005000010180700
 name = "Captain Toad: Treasure Tracker - 2160p (4K)"
@@ -20,7 +18,15 @@ height = 720
 overwriteWidth = 3384
 overwriteHeight = 2160
 
-# TV texture alpha
+# TV zoom level transition
+[TextureRedefine]
+formatsExcluded = 0x034,0x41A # exclude title screen + pulse effect
+width = 1000
+height = 600
+overwriteWidth = 3000
+overwriteHeight = 1800
+
+# TV texture alpha (half resolution)
 [TextureRedefine]
 formatsExcluded = 0x034,0x41A # exclude title screen + pulse effect
 width = 640
@@ -28,13 +34,21 @@ height = 360
 overwriteWidth = 1920
 overwriteHeight = 1080
 
-# TV zoomed in texture alpha
+# TV zoomed in texture alpha (half resolution)
 [TextureRedefine]
 formatsExcluded = 0x034,0x41A # exclude title screen + pulse effect
 width = 564
 height = 360
 overwriteWidth = 1692
 overwriteHeight = 1080
+
+# TV zoom level transition texture alpha (half resolution)
+[TextureRedefine]
+formatsExcluded = 0x034,0x41A # exclude title screen + pulse effect
+width = 500
+height = 300
+overwriteWidth = 1500
+overwriteHeight = 900
 
 # Gamepad
 [TextureRedefine]
@@ -44,7 +58,7 @@ height = 480
 overwriteWidth = 3840
 overwriteHeight = 2160
 
-# Gamepad texture alpha
+# Gamepad texture alpha (half resolution)
 [TextureRedefine]
 formatsExcluded = 0x034,0x41A # exclude title screen + pulse effect
 width = 427
@@ -55,16 +69,20 @@ overwriteHeight = 1080
 # Remaining viewport resolutions
 #1024x1024
 #512x512
-#320x180
-#282x180
+#320x180 TV texture alpha (quarter resolution)?
+#250x150 TV zoom level transition texture alpha (quarter resolution)?
+#282x180 TV zoomed in texture alpha (quarter resolution)?
 #256x128
 #160x90
 #141x90
 #128x1
+#125x75
 #80x45
 #70x45
+#62x37
 #40x22
 #35x22
+#31x18
 #20x11
 #17x11
 #2x1
