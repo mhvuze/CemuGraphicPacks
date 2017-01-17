@@ -54,8 +54,18 @@ overwriteHeight = 1080
 
 # Remaining viewport resolutions
 #1024x1024
+#512x512
+#320x180
 #282x180
+#256x128
+#160x90
 #141x90
+#128x1
+#80x45
 #70x45
+#40x22
 #35x22
+#20x11
 #17x11
+#2x1
+#1x1
