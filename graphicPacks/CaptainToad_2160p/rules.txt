@@ -1,3 +1,5 @@
+# Bugs: Flickering at title menu logo pulsing, need to exclude some texture type(s)?
+
 [Definition]
 titleIds = 0005000010180500,0005000010180600,0005000010180700
 name = "Captain Toad: Treasure Tracker - 2160p (4K)"
@@ -18,6 +20,22 @@ height = 720
 overwriteWidth = 3384
 overwriteHeight = 2160
 
+# TV texture alpha
+[TextureRedefine]
+formatsExcluded = 0x41A # exclude title screen
+width = 640
+height = 360
+overwriteWidth = 1920
+overwriteHeight = 1080
+
+# TV zoomed in texture alpha
+[TextureRedefine]
+formatsExcluded = 0x41A # exclude title screen
+width = 564
+height = 360
+overwriteWidth = 1692
+overwriteHeight = 1080
+
 # Gamepad
 [TextureRedefine]
 formatsExcluded = 0x41A # exclude title screen
@@ -26,10 +44,17 @@ height = 480
 overwriteWidth = 3840
 overwriteHeight = 2160
 
+# Gamepad texture alpha
+[TextureRedefine]
+formatsExcluded = 0x41A # exclude title screen
+width = 427
+height = 240
+overwriteWidth = 1920
+overwriteHeight = 1080
+
 # Remaining viewport resolutions
 #1024x1024
 #282x180
-#564x360
 #141x90
 #70x45
 #35x22
