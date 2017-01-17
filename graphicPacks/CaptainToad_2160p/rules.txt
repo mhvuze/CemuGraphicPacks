@@ -10,6 +10,14 @@ height = 720
 overwriteWidth = 3840
 overwriteHeight = 2160
 
+# TV zoomed in
+[TextureRedefine]
+formatsExcluded = 0x41A # exclude title screen
+width = 1128
+height = 720
+overwriteWidth = 3384
+overwriteHeight = 2160
+
 # Gamepad
 [TextureRedefine]
 formatsExcluded = 0x41A # exclude title screen
@@ -17,3 +25,12 @@ width = 854
 height = 480
 overwriteWidth = 3840
 overwriteHeight = 2160
+
+# Remaining viewport resolutions
+#1024x1024
+#282x180
+#564x360
+#141x90
+#70x45
+#35x22
+#17x11
