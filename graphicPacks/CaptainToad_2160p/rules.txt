@@ -66,8 +66,16 @@ height = 240
 overwriteWidth = 1920
 overwriteHeight = 1080
 
+# Shadowmap
+# by Dario ff
+[TextureRedefine]
+width = 1024
+height = 1024
+formatsExcluded = 0x008,0x41A,0x033,0x034,0x035,0x431,0x235,0x433 # exclude everything but shadowmap
+overwriteWidth = 4096
+overwriteHeight = 4096
+
 # Remaining viewport resolutions
-#1024x1024
 #512x512
 #320x180 TV texture alpha (quarter resolution)?
 #250x150 TV zoom level transition texture alpha (quarter resolution)?
